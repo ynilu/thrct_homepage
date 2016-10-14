@@ -1,0 +1,103 @@
+<html><head>
+	<title>台灣馬術治療中心</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="shortcut icon" href="img/favicon.ico">    
+	<style>
+		td {font-family: "\5FAE\8EDF\6B63\9ED1\9AD4", "Microsoft JhengHei", ",MingLiU", "sans-serif"; font-size:24pt}
+		A:link {text-decoration: none; color:black}
+		A:visited {color:black}
+		A:hover {color:blue}
+		#index_mainphoto {
+			 position: relative;
+			 width: 600;
+			 height: 400;
+			 box-shadow: 5px 5px 30px #412001;
+			 z-index: 100;
+		}
+		.index_mainphoto_image {
+			position: absolute;
+			left: 0;
+		}
+		#index_copyright {
+			float: left;
+			font-weight:bold;
+		}
+		#enter {
+			float: right;
+			height: 30px;
+			width: 100px;
+			display: block;
+			bottom: 10px;
+			position: relative;
+			right: 40px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 16px;
+			color: rgb(0,114,188);
+			line-height: 28px;
+			text-align: center;
+			border: 1px solid rgb(0,114,188);
+			border-radius: 5px;
+			z-index: 10;
+		}
+		.a_t_lang {
+            color: #757c8e;
+			text-decoration: none;
+		}
+		.a_t_lang:link {
+			color: rgb(0,114,188);
+			text-decoration: none;
+		}
+		.a_t_lang:visited {
+			color: rgb(0,114,188);
+			text-decoration: none;
+		}
+		.a_t_lang:active {
+		 color: #FFFF00;
+		 text-decoration:underline;
+		}
+		.a_t_lang:hover {
+			color: #CCCCCC;
+			text-decoration: none;
+		}
+		h1 {
+			font-family: 微軟正黑體, Microsoft JhengHei, 新細明體, PMingLiU, 細明體, MingLiU, 標楷體, DFKai-sb,serif;
+		}
+		#heti_link {
+			 position: relative;
+			 height: 10px;
+			 bottom: 400px;
+			 float: right;
+			 padding-right: 20px;
+		}
+	</style>
+</head>
+<body bgcolor="#FCFBE3">
+<center>
+<br /><h1><a href="http://zh.thrct.org.tw/" target="_top">台灣馬術治療中心</a></h1><br />
+<div id="index_mainphoto"><a href="http://zh.thrct.org.tw/" target="_top">
+	<img src="img/photo1.jpg" width="600" class="index_mainphoto_image" id="mainPhoto1" />
+	<img src="img/photo2.jpg" width="600" class="index_mainphoto_image" id="mainPhoto2" style="opacity:0;" />
+	<img src="img/photo3.jpg" width="600" class="index_mainphoto_image" id="mainPhoto3" style="opacity:0;" />
+</a></div>
+<script src="jquery.min.js"></script>
+<script>
+	show2();
+	function show1() {
+		$('#mainPhoto1').delay(4000).animate({opacity:1}, 2000);
+		$('#mainPhoto3').delay(4000).animate({opacity:0}, 2000, show2);
+	}
+	function show2() {
+		$('#mainPhoto1').delay(4000).animate({opacity:0}, 2000);
+		$('#mainPhoto2').delay(4000).animate({opacity:1}, 2000, show3);
+	}
+	function show3() {
+		$('#mainPhoto2').delay(4000).animate({opacity:0}, 2000);
+		$('#mainPhoto3').delay(4000).animate({opacity:1}, 2000, show1);
+	}
+</script>
+<div id="heti_link"><a href="http://heti2015.org/" target="_blank">2015HETI國際研討會<br /><br /><img src="img/heti2015_logo.jpg" /></a></div>
+</center>
+<br /><br /><hr><br /><br />
+<div id="index_copyright">Copyright &copy; THRCT.org Congress all rights reserved.</div>
+<div id="enter"><a href="http://zh.thrct.org.tw/" target="_top" title="Enter" class="a_t_lang">Enter</a></div>
+</body></html>
